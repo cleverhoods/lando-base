@@ -1,0 +1,19 @@
+# To activate this feature, copy this file as .lando.yml.
+# Further read on configuration file load order is available on:
+# https://docs.lando.dev/config/lando.html#base-file
+
+tooling:
+  build-app:
+    cmd: bash /app/scripts/build-app.sh
+  clean:
+    cmd: bash /app/scripts/clean.sh
+  install-app:
+    cmd: bash /app/scripts/install-app.sh
+  xdebug:
+    cmd: bash /app/scripts/xdebug.sh
+
+services:
+  appserver:
+    config:
+      php: local/php/xdebug.ini
+
