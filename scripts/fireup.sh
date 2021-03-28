@@ -10,7 +10,7 @@ cp "${PROJECT_ROOT}"/web/sites/default/example.settings.lando.php "${PROJECT_ROO
 log "settings.lando.php is added"
 
 log "Add .lando.local.yml"
-cp "${PROJECT_ROOT}"/example.lando.local.yml "${PROJECT_ROOT}"/.example.lando.yml || exit 1;
+cp "${PROJECT_ROOT}"/example.lando.local.yml "${PROJECT_ROOT}"/.lando.local.yml || exit 1;
 log ".lando.local.yml is added"
 
 cd "${PROJECT_ROOT}" || exit 1;
